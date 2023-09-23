@@ -1,0 +1,28 @@
+<!-- people.ejs -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>People</title>
+</head>
+<body>
+    <h1>People</h1>
+    <table>
+        <tr>
+            <td>Name</td>
+            <td>Actions</td>
+        </tr>
+        <% for(var i=0; i < people.length; i++) { %>
+            <tr>
+                <td><%= people[i].name %></td>
+                <td>
+                    <a href="/person/<%= people[i].id %>">View</a>
+                    <a href="/update2/<%= people[i].id %>">Edit</a>
+                    <a href="/delete2/<%= people[i].id %>">Delete</a>
+                </td>
+            </tr>
+        <% } %>
+    </table>
+    <a href="/create2">Create New Person</a>
+    <a href="/">Home</a>
+</body>
+</html>

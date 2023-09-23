@@ -1,0 +1,30 @@
+<!-- renting.ejs -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Renting</title>
+</head>
+<body>
+    <h1>Renting</h1>
+    <table>
+        <tr>
+            <td>Room-ID</td>
+            <td>Person-ID</td>
+            <td>Actions</td>
+        </tr>
+        <% for(var i=0; i < renting.length; i++) { %>
+            <tr>
+                <td><%= renting[i].r_id %></td>
+                <td><%= renting[i].p_id %></td>
+                <td>
+                    <a href="/rent/<%= renting[i].id %>">View</a>
+                    <a href="/update3/<%= renting[i].id %>">Edit</a>
+                    <a href="/delete3/<%= renting[i].id %>">Delete</a>
+                </td>
+            </tr>
+        <% } %>
+    </table>
+    <a href="/create3">Create New Rent</a>
+    <a href="/">Home</a>
+</body>
+</html>

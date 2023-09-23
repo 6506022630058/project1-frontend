@@ -1,0 +1,14 @@
+<!-- person.ejs -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Person</title>
+</head>
+<body>
+    <h1><%= person.name %></h1>
+    <p>ID: <%= person.id %></p>
+    <a href="/update2/<%= person.id %>">Edit</a>
+    <a href="/delete2/<%= person.id %>">Delete</a>
+    <a href="/people">Back to List</a>
+</body>
+</html>

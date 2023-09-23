@@ -1,0 +1,28 @@
+<!-- rooms.ejs -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Rooms</title>
+</head>
+<body>
+    <h1>Rooms</h1>
+    <table>
+        <tr>
+            <td>Room Number</td>
+            <td>Actions</td>
+        </tr>
+        <% for(var i=0; i < rooms.length; i++) { %>
+            <tr>
+                <td><%= rooms[i].name %></td>
+                <td>
+                    <a href="/room/<%= rooms[i].id %>">View</a>
+                    <a href="/update1/<%= rooms[i].id %>">Edit</a>
+                    <a href="/delete1/<%= rooms[i].id %>">Delete</a>
+                </td>
+            </tr>
+        <% } %>
+    </table>
+    <a href="/create1">Create New Room</a>
+    <a href="/">Home</a>
+</body>
+</html>

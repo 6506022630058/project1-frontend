@@ -1,0 +1,25 @@
+<!-- summary.ejs -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Summary</title>
+</head>
+<body>
+    <h1>Summary</h1>
+    <table>
+        <tr>
+            <td>Room-ID</td>
+            <td>Room</td>
+            <td>Person</td>
+        </tr>
+        <% for(var i=0; i < summary.length; i++) { %>
+            <tr>
+                <td><%= summary[i].room_id %></td>
+                <td><%= summary[i].room_name %></td>
+                <td><%= summary[i].people %></td>
+            </tr>
+        <% } %>
+    </table>
+    <a href="/">Home</a>
+</body>
+</html>
