@@ -9,15 +9,13 @@
     <h1>Summary</h1>
     <table>
         <tr>
-            <td>Room-ID</td>
             <td>Room</td>
             <td>Person</td>
         </tr>
         <% for(var i=0; i < summary.length; i++) { %>
             <tr>
-                <td><%= summary[i].room_id %></td>
-                <td><%= summary[i].room_name %></td>
-                <td><%= summary[i].people %></td>
+                <td><%= summary[i].r_name %></td>
+                <td><%= summary[i].p_name %></td>
             </tr>
         <% } %>
     </table>
