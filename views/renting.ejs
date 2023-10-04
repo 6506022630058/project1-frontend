@@ -9,14 +9,14 @@
     <h1>Renting</h1>
     <table>
         <tr>
-            <td>Room-ID</td>
-            <td>Person-ID</td>
+            <td>Room-Name</td>
+            <td>Person-Name</td>
             <td>Actions</td>
         </tr>
         <% for(var i=0; i < renting.length; i++) { %>
             <tr>
-                <td><%= renting[i].r_id %></td>
-                <td><%= renting[i].p_id %></td>
+                <td><%= renting[i].r_name %></td>
+                <td><%= renting[i].p_name %></td>
                 <td>
                     <a href="/rent/<%= renting[i].id %>">View</a>
                     <a href="/update3/<%= renting[i].id %>">Edit</a>
