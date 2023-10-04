@@ -1,3 +1,4 @@
+// npm i express
 const express = require('express');
 const axios = require('axios');
 const app = express();
@@ -180,7 +181,7 @@ app.get("/create3", (req, res) => {
 
 app.post("/create3", async (req, res) => {
     try{
-        const data = {r_id: req.body.r_id, p_id: req.body.p_id};
+        const data = {r_name: req.body.r_name, p_name: req.body.p_name};
         await axios.post(base_url + '/renting', data);
         res.redirect('/renting');
     }catch(err){
@@ -202,7 +203,7 @@ app.get("/update3/:id", async (req, res) => {
 
 app.post("/update3/:id", async (req, res) => {
     try{
-        const data = {r_id: req.body.r_id, p_id: req.body.p_id};
+        const data = {r_name: req.body.r_name, p_name: req.body.p_name};
         await axios.put(base_url + '/renting/' + req.params.id, data);
         res.redirect('/renting');
     } catch(err){
