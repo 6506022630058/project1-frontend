@@ -5,7 +5,7 @@ const app = express();
 const bodyParser = require('body-parser');
 
 // const base_url = 'http://localhost:3000/hopak';
-const base_url = 'http://node52725-project-nueaowen.proen.app.ruk-com.cloud';
+const base_url = 'http://node52725-project-nueaowen.proen.app.ruk-com.cloud/hopak';
 
 app.set('view engine', 'ejs');
 app.use(bodyParser.json());
