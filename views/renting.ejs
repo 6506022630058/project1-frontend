@@ -5,18 +5,18 @@
     <title>Renting</title>
 </head>
 <body>
-    <link rel="stylesheet" href="../css/stylegreen.css">
     <h1>Renting</h1>
+    <link rel="stylesheet" href="../css/stylegreen.css">
     <table>
         <tr>
-            <td>Room</td>
-            <td>Person</td>
+            <td>Room-ID</td>
+            <td>Person-ID</td>
             <td>Actions</td>
         </tr>
         <% for(var i=0; i < renting.length; i++) { %>
             <tr>
-                <td><%= renting[i].r_name %></td>
-                <td><%= renting[i].p_name %></td>
+                <td><%= renting[i].r_id %></td>
+                <td><%= renting[i].p_id %></td>
                 <td>
                     <a href="/rent/<%= renting[i].id %>">View</a>
                     <a href="/update3/<%= renting[i].id %>">Edit</a>
